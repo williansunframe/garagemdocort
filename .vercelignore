@@ -1,0 +1,6 @@
+# Arquivos que não devem ser publicados na Vercel
+.htaccess
+_headers
+LEIA-ME.txt
+README.md
+.gitignore

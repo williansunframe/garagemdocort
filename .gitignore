@@ -1,0 +1,15 @@
+# Vercel
+.vercel
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependências / builds (caso algum dia sejam usados)
+node_modules/
+dist/
+
+# Variáveis de ambiente (nunca subir segredos)
+.env
+.env.*

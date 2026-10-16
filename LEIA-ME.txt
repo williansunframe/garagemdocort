@@ -1,0 +1,67 @@
+GARAGEM DO CORTE - SITE
+=======================
+
+COMO VER NO COMPUTADOR
+  Dê dois cliques em index.html
+
+COMO COLOCAR NO AR PELO GITHUB + VERCEL (recomendado)
+  Antes: no Explorador de Arquivos, ative  Exibir > Mostrar > Itens ocultos
+  (para ver .gitignore e .vercelignore, que também precisam ser enviados).
+
+  GitHub:
+  1. Acesse https://github.com/new, dê um nome (ex.: garagem-do-corte) e crie o repositório
+  2. Clique em "uploading an existing file"
+  3. Selecione TUDO que está dentro desta pasta e arraste para a página
+  4. Clique em "Commit changes"
+
+  Vercel:
+  1. Acesse https://vercel.com e entre com a conta do GitHub
+  2. Add New > Project > escolha o repositório > Deploy
+     (Framework Preset: Other — não precisa de comando de build)
+  3. Pronto: o link https://....vercel.app já está no ar, com HTTPS
+  4. Toda alteração enviada ao GitHub é publicada sozinha na Vercel
+  5. Domínio próprio: Project > Settings > Domains
+
+  Segurança na Vercel: aplicada pelo arquivo vercel.json (não apague).
+
+OUTRA OPÇÃO: NETLIFY (arrastar e soltar)
+  1. Acesse https://app.netlify.com/drop
+  2. Arraste esta pasta inteira para a página
+  3. Crie uma conta grátis para o site não expirar
+  4. Copie o link https://... e coloque na bio do Instagram
+  (Para domínio próprio, ex.: garagemdocorte.com.br, configure em "Domain settings" na Netlify)
+
+  Em hospedagem tradicional (Hostinger, HostGator, Locaweb):
+  envie todo o conteúdo da pasta para "public_html" pelo gerenciador de arquivos
+  e ative o SSL/HTTPS no painel. O arquivo .htaccess já aplica as proteções.
+
+O QUE EDITAR E ONDE
+  - Números de WhatsApp ......... js/main.js (topo do arquivo)
+      whatsapp       = barbearia (atendimento geral)
+      whatsappCursos = cursos Iniciante e PRO
+  - Link de agendamento ......... js/main.js (topo do arquivo)
+  - Preços dos serviços ......... index.html, seção "SERVIÇOS"
+  - Preços dos cursos ........... index.html, seção "CURSOS"
+  - Horários ..................... index.html, seção "LOCALIZAÇÃO"
+  - Fotos da galeria ............ pasta img/ (galeria-1.jpg a galeria-6.jpg)
+      Para trocar, salve a nova foto com o MESMO nome.
+  - Cores ........................ css/style.css (topo do arquivo, :root)
+
+SEGURANÇA (já configurado)
+  - Política de segurança de conteúdo (CSP): o site só carrega scripts próprios,
+    a biblioteca 3D (com verificação de integridade SRI) e as fontes do Google.
+  - Sem formulários nem login: não há dados de clientes armazenados no site.
+  - Links externos abrem em nova aba sem dar acesso à página (noopener).
+  - Proteção contra o site ser embutido em outros sites (clickjacking).
+  - HTTPS obrigatório e HSTS (no .htaccess e no _headers).
+  - Bloqueio de listagem de pastas e de acesso a arquivos de configuração.
+
+ARQUIVOS
+  index.html ....... página
+  css/style.css .... visual
+  js/main.js ....... links, menu e animações
+  js/pole3d.js ..... poste 3D com asas
+  img/ ............. fotos e ícone
+  .htaccess ........ segurança para hospedagem Apache
+  _headers ......... segurança para Netlify / Cloudflare Pages
+  robots.txt ....... permite o Google indexar o site
