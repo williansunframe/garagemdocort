@@ -8,10 +8,11 @@ HTML, CSS e JavaScript puros, sem build. Inclui um poste de barbeiro com asas em
 ```
 index.html      Página principal
 404.html        Página de erro
-css/style.css   Estilos (cores no topo, em :root)
-js/main.js      Links, menu mobile, animações (CONFIG no topo)
-js/pole3d.js    Logo 3D
-img/            Fotos da galeria e favicon
+style.css   Estilos (cores no topo, em :root)
+main.js      Links, menu mobile, animações (CONFIG no topo)
+pole3d.js    Logo 3D
+galeria-*.jpg   Fotos da galeria
+favicon.svg     Ícone da aba
 vercel.json     Cabeçalhos de segurança e cache para a Vercel
 .htaccess       Cabeçalhos de segurança para hospedagem Apache
 _headers        Cabeçalhos de segurança para Netlify / Cloudflare Pages
@@ -39,13 +40,13 @@ _headers        Cabeçalhos de segurança para Netlify / Cloudflare Pages
 
 | O quê | Onde |
 |---|---|
-| WhatsApp geral e dos cursos | `js/main.js` (CONFIG) **e** links `wa.me` no `index.html` |
-| Link de agendamento | `js/main.js` (CONFIG) **e** links no `index.html` |
+| WhatsApp geral e dos cursos | `main.js` (CONFIG) **e** links `wa.me` no `index.html` |
+| Link de agendamento | `main.js` (CONFIG) **e** links no `index.html` |
 | Preços e serviços | `index.html`, seção `#servicos` |
 | Cursos | `index.html`, seção `#cursos` |
 | Horários | `index.html`, seção `#local` |
-| Fotos | `img/galeria-1.jpg` … `galeria-6.jpg` (mesmo nome) |
-| Cores | `css/style.css`, bloco `:root` |
+| Fotos | `galeria-1.jpg` … `galeria-6.jpg` (mesmo nome) |
+| Cores | `style.css`, bloco `:root` |
 
 ## Segurança
 

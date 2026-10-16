@@ -36,16 +36,16 @@ OUTRA OPÇÃO: NETLIFY (arrastar e soltar)
   e ative o SSL/HTTPS no painel. O arquivo .htaccess já aplica as proteções.
 
 O QUE EDITAR E ONDE
-  - Números de WhatsApp ......... js/main.js (topo do arquivo)
+  - Números de WhatsApp ......... main.js (topo do arquivo)
       whatsapp       = barbearia (atendimento geral)
       whatsappCursos = cursos Iniciante e PRO
-  - Link de agendamento ......... js/main.js (topo do arquivo)
+  - Link de agendamento ......... main.js (topo do arquivo)
   - Preços dos serviços ......... index.html, seção "SERVIÇOS"
   - Preços dos cursos ........... index.html, seção "CURSOS"
   - Horários ..................... index.html, seção "LOCALIZAÇÃO"
-  - Fotos da galeria ............ pasta img/ (galeria-1.jpg a galeria-6.jpg)
+  - Fotos da galeria ............ galeria-1.jpg a galeria-6.jpg
       Para trocar, salve a nova foto com o MESMO nome.
-  - Cores ........................ css/style.css (topo do arquivo, :root)
+  - Cores ........................ style.css (topo do arquivo, :root)
 
 SEGURANÇA (já configurado)
   - Política de segurança de conteúdo (CSP): o site só carrega scripts próprios,
@@ -58,10 +58,11 @@ SEGURANÇA (já configurado)
 
 ARQUIVOS
   index.html ....... página
-  css/style.css .... visual
-  js/main.js ....... links, menu e animações
-  js/pole3d.js ..... poste 3D com asas
-  img/ ............. fotos e ícone
+  style.css .... visual
+  main.js ....... links, menu e animações
+  pole3d.js ..... poste 3D com asas
+  galeria-*.jpg .... fotos
+  favicon.svg ...... ícone da aba
   .htaccess ........ segurança para hospedagem Apache
   _headers ......... segurança para Netlify / Cloudflare Pages
   robots.txt ....... permite o Google indexar o site
